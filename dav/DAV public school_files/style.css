@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+
+}
+body{
+  background-image: linear-gradient( #6aa0ad , #9DC88D);
+}
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 99;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    background-image: linear-gradient( 60DEG ,#5faf5f , #9DC88D);
+    
+}
+#chki1{
+    display: none;
+}
+
+header .logo{
+    flex: 1;
+    color: #ffffff;
+    text-shadow: 0 0 2px #000;
+    margin-left: 50px;
+}
+header .search-box{
+    flex: 1;
+    position: relative;
+}
+.search-box input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: rgb(255, 255, 255); 
+    border-radius: 30px; 
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 40px;
+
+}
+.search-box button{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(0.9);
+    
+}
+header ul{
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: ;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    font-family: Courier New;
+    font-size: 22px;
+}
+header ul li a:hover{
+    border-bottom: 2px solid #F1B24A;
+    background-color: rgb(255, 253, 250);
+    border-radius: 30px;
+    box-shadow: rgb(0, 0, 0);
+    transition-duration: 0.8s;
+    font-weight: 200px;
+}
+header .menu{
+    font-size: 2.5em;
+    display: none;
+
+}
+header .menu:hover{
+    background-color: #4D774E;
+    border-radius: 10px;
+    transition-duration: 0.8s;
+
+}
+@media(max-width:1000px){
+    .search-box button{
+        position: absolute;
+    }
+    header ul{
+        position: fixed;
+        top: 100px;
+        right: -100%;
+        background: whitesmoke;
+        height: calc(100vh - 100px);
+        width: 50%;
+        flex-direction: column;
+        align-items:  center;
+        transition: right 0.5s linear;
+
+    }
+    header ul li a{
+        color: #000;
+    }
+    header .menu{
+        display: block;
+        width: 100px;
+        text-align: center;
+    }
+    #chki1:checked ~ ul{
+        right: 0;
+    }
+}
+@media(max-width:600px){
+    header .logo{
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    header ul{
+        width: 100%;
+    }
+}
+.davpic{
+  padding-top: 4px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  align-content: center;
+}
+.card{
+    display: none;
+    font-family: montreal;
+    font-color: white;
+    background-color:  whitesmoke;
+    padding: 10px;
+    letter-spacing: 1px;
+    box-shadow: rgb(255, 255, 255);
+    transition-delay: 2s;
+
+  }
+  .heading{
+    font-family: montreal;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg , #43cea2 , #9DC88D);
+    text-align: center;
+    
+    
+  }
+  .heading:hover{
+    background-color: white;
+    font-size: 50px;
+    transition-duration: 1s;
+    
+  }
+  .heading:hover + .card{
+    border-radius: 0.1px;
+    display: block;
+    transition-duration: 1s;
+  }
+.video{
+    padding: 20px;
+    padding-top: 40px;
+    align-content: center;
+    box-shadow: black;
+}
+.form{
+    text-align: center;
+    background-image: linear-gradient(90deg , #43cea2 , #9DC88D);
+    text-style: arial;
+    font-family: cursive;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    text-shadow: black;
+  }
+.gender{
+    text-align: left;
+    padding-left: 45px;
+    border-radius: 5px;
+  }
+.sub{
+    text-align: left;
+    padding-left: 45px;
+  }
+.sub:hover{
+    background-color: white;
+    transition-duration: 0.8s;
+  }
+  
+.upp1{
+    padding: 1px;
+    font-family: cursive;
+    border-radius: 5px;
+    text-align: left;
+    padding-left: 12px;
+  }
+  
+.upp2{
+    padding: 1px;
+    border-radius: 5px;
+    text-align: left;
+    padding-left: 12px;
+  
+  }
+.upp3{
+    font-family: cursive;
+    border-radius: 5px;
+    text-align: left;
+    padding-left: 50px;
+  }
+.upp5{
+    font-family: cursive;
+    border-radius: 5px;
+    text-align: left;
+    padding-left: 75px;
+  }
+
+   
+.upp2:hover{
+  background-color: white;
+  transition-duration: 0.8s;
+  }
+.upp3:hover{
+  background-color: white;
+  transition-duration: 0.8s;
+  }
+.upp4:hover{
+  background-color: white;
+  transition-duration: 0.8s;
+  }
+.upp4{
+    font-family: cursive;
+    border-radius: 5px;
+    text-align: left;
+    padding-left: 52px;
+  }
+.upp1:hover{
+  background-color: white;
+  transition-duration: 0.8s;
+  }
+.gen:hover{
+    background-color: white;
+    transition-duration: 0.8s;
+  }
+
+.formm {
+    float: right;
+    padding-top: 40px;
+    width: 40%;
+    height: 100%;
+    padding-right: 20px;
+  
+}
+.grade{
+  padding-right: 30px;
+  text-align: center;
+}
+.grade:hover{
+  background-color: white;
+  transition-duration: 0.8s;
+}
+.std{
+  padding-left: 105px;
+  text-align: center;
+}
+.std:hover{
+  background-color: white;
+  transition-duration: 0.8s;
+}
+
+#vector1 {
+  animation: rotate 2.5s infinite alternate;
+  transform-origin: right;
+ 
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(5deg);
+  }
+  70% {
+    transform: rotate(-3deg);
+  }
+}
+.hat{
+  padding-left: 20px;
+  padding-top: 40px;
+
+}
+.girl{
+  float: left;
+  left: -50px;
+  position: sticky;
+
+}
+.footer {
+  bottom: 0px;
+  padding-top: 100px;
+  width: 100%;
+  background-color: cadetblue;
+  color: whitesmoke;
+  text-align: left;
+  padding-left: 50px;
+  display: flex;
+  padding: 20px
+}
+.footer-center{
+	width: 35%;
+}
+
+
+.footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+.footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-center p a{
+	color:  #fcfbfa;
+	text-decoration: none;;
+}

@@ -1,0 +1,40 @@
+ 
+
+PROGRAM CODE 
+
+10 REM  Total numbers of all subjects
+20 INPUT "Marks of Hindi" H
+30 INPUT "Marks of Maths" M
+40 INPUT "Marks of Science" S
+50 INPUT "Marks of S.S.T" T
+60 INPUT "Marks of Computer" C
+80 END
+
+
+
+OUTPUT
+Enter M
+? 45
+Enter E 
+? 35
+Enter H
+? 35
+Enter S
+? 35
+Enter T
+? 39
+Enter C
+? 30 
+Total mark =219
+
+AVERAGE
+REM average of total marks
+input"marks of maths" 45
+input"marks of english" 35
+input"marks of hindi" 35
+input"marks of science" 35
+input"marks of sst" 39
+input"marks of computer" 30
+
+LET 45+35+35+35+39+30
+Average = 36.5
